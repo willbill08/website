@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>WILLIAM TSANG</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script> $(document).ready(function(){
+  let scroll_link = $('.scroll');
+//smooth scrolling ----------------------- // 
+  scroll_link.click(function(e){
+    e.preventDefault();
+    let url = $('body').find($(this).attr('href')).offset().top - 150;
+  $('html, body').animate({
+    scrollTop : url
+    },380);
+  $(this).parent().addClass('active');
+  $(this).parent().siblings().removeClass('active');
+    return false; 
+  });
+  });
+</script>
+<script> // https://mdbootstrap.com/snippets/jquery/temp/1478327?action=prism_export // 
+$('#modal1').on('hidden.bs.modal', function (e) {
+  // do something...
+$('#modal1 iframe').attr("src", $("#modal1 iframe").attr("src"));
+});
+$('#modal2').on('hidden.bs.modal', function (e) {
+  // do something...
+$('#modal2 iframe').attr("src", $("#modal2 iframe").attr("src"));
+});
+$('#modal3').on('hidden.bs.modal', function (e) {
+  // do something...
+$('#modal3 iframe').attr("src", $("#modal3 iframe").attr("src"));
+});
+</script>
+
+<style>
+.carousel {
+  margin: 50px auto;
+  padding: 0 70px;
+}
+.carousel .item {
+  color: #999;
+  font-size: 14px;
+    text-align: center;
+  overflow: hidden;
+    min-height: 100px;
+}
+.carousel .item .img-box {
+  width: 135px;
+  height: 135px;
+  margin: 0 auto;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+}
+.carousel .img-box img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+}
+.carousel .testimonial {
+  padding: 30px 0 10px;
+}
+.carousel .overview { 
+  font-style: italic;
+  padding-bottom: 50px;
+}
+.carousel .overview b {
+  text-transform: uppercase;
+  color: #7AA641;
+}
+.carousel .carousel-control {
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  top: 50%;
+}
+.carousel-control i {
+    position: absolute;
+    display: inline-block;
+}
+.carousel .carousel-indicators {
+  bottom: 0px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+  width: 25px;
+  height: 1px;
+  margin: 10px 10px;
+  border-radius: 100%;
+}
+.carousel-indicators li { 
+  background: #999;
+  border-color: transparent;
+  box-shadow: inset 0 0px 0px rgba(0,0,0,0.2);
+}
+.carousel-indicators li.active {  
+  background: black;   
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.2);
+</style>
+<style>
+/*dot = class & # = id */
+.container ul{
+  text-align: left;
+}
+.container-fluid {
+  margin:0;
+  padding:0;
+}
+.header {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 32px; 
+  font-weight: bold; 
+  text-align: center; 
+  background-color: white; 
+  padding: 0px 0px 10px 0px; 
+}
+a:hover {
+  text-decoration: none;
+}
+.links {
+  font-size: 18px;
+  color: blue;
+}
+.dots {
+  border-bottom: 1px dotted #06f;
+  background-color: #fff;
+  padding: 0px;
+}
+h1 {
+  font-family: arial;
+  font-size: 7.5vw;
+  -webkit-text-stroke: px black;
+  color: white;
+  text-shadow: 0px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.footer {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px; 
+  font-weight: bold; 
+  text-align: center; 
+  background-color: white; 
+  padding: 0px 0px 10px 0px; 
+}
+/* Smooth Scroll w/Bootstrap & jQuery| bootsnipp.com/snippets/6Xg2d*/ 
+.jumbotron-fluid {
+  width:100%;
+  height:100vh;
+  max-height: 100%;
+  overflow: visible;
+  margin-top: 100px;
+  text-align: center;
+}
+.display-3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px; 
+  font-weight: bold; 
+  text-align: center; 
+  display: block;
+}
+.one {
+  background: #06beb6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffffff, #ffffff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffffff, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.two {
+  background: #642B73;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffffff, #ffffff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffffff, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.three {
+  background: #36D1DC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffffff, #ffffff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffffff, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.four {
+  background: #CB356B;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffffff, #ffffff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffffff, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+</style>
+</head>
+
+<body>
+<!-- fixed header anchor scroll -->
+<div class="fixed-top container-fluid header">
+  <div class="col-12">WILLIAM TSANG</div>
+    <div class="links">
+      <a class="scroll" href="#one">CONTENT</a>
+      <a class="scroll" href="#two">CREDENTIALS</a>
+      <a href="http://www.linkedin.com/in/willtsang" target="_blank">CONTACT</a>
+    <div class="dots"></div>
+  </div>
+</div>
+<!-- smooth scroll content start --> 
+<div class="jumbotron-fluid align-middle">
+  <h1>DIGITAL <br/> PROJECT MANAGER <br/> / <br/> CREATIVE PRODUCER</h1>
+    <div class="container" style="margin-top:30px">
+      <div class="row">
+        <div class="col-sm-12">
+          <p align="left">With a healthy obsession for learning new things, getting things done, and always looking for process improvement, I've worked with cross-functional teams in a project management function for a digital creative agency, e-commerce retailer, and an advertising technology start-up. Adaptable, assertive, and armed with a calming presence and skilled in various digital tools ranging from MS Project and Jira to HTML/CSS and Final Cut Pro, I can help solve problems and drive digital product marketing programs to quality completion.</p><br/> 
+        </div>
+      </div>
+    </div>
+    <div class="container" style="margin-top:50px">
+      <h1 id="one" align="left">CONTENT</h1>
+        <div class="row">
+          <div class="col-sm-12"> <!--Modal: LAST-->
+		        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  		        <div class="modal-dialog modal-lg" role="document">
+    	         <div class="modal-content">
+      	         <div class="modal-body mb-0 p-0">
+                  <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+        	         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/D3DXXgA7LDQ" allowfullscreen></iframe>
+                  </div>
+    	         </div>
+     	        </div>
+   		       </div>
+   		     </div> <!--Modal: FOOTBED-->
+            <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg" role="document"> <!--Content-->
+                <div class="modal-content"> <!--Body-->
+                  <div class="modal-body mb-0 p-0">
+		                <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+			                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/l5sFcNmymK0" allowfullscreen></iframe>
+                    </div>
+                  </div>
+    	           </div>
+		            </div>
+		          </div> <!--Modal: JDASH-->
+            <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg" role="document"> <!--Content-->
+                <div class="modal-content"> <!--Body-->
+                  <div class="modal-body mb-0 p-0">
+		                <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+			               <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/15743057" allowfullscreen></iframe>
+                    </div>
+                  </div>
+    	         </div>
+		          </div>
+	           </div><!--Modal: Name-->
+    	         <a><img class="img-fluid z-depth-1" src="content/last_2.jpg" width="100%" alt="video" data-toggle="modal" data-target="#modal1"></a>  
+    	         <a><img class="img-fluid z-depth-1" src="content/rubber02.jpg" width="100%" alt="video" data-toggle="modal" data-target="#modal2"></a>  
+    	         <a><img class="img-fluid z-depth-1" src="content/holystitch.jpg" width="100%" alt="video" data-toggle="modal" data-target="#modal3"></a>  
+          </div>
+        </div>
+      </div>
+    <div class="container" style="margin-top:80px">
+      <h1 id="two" align="right">SERVICES</h1>
+        <div class="row"> 
+          <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+          <ul class="nav nav-pills flex-column">
+            <li class="nav-item"><a class="nav-link">• Provided day-to-day strategic support partnering directly with clients/stakeholders on-site.</a></li>
+            <li class="nav-item"><a class="nav-link">• Supported agency strategists developing journey roadmaps and the production of agency-client workshops.</a></li>
+            <li class="nav-item"><a class="nav-link" >• Managed 20+ resources delivering on-time digital marketing channel partner assets seen globally.</a></li>
+            <li class="nav-item"><a class="nav-link">• Established a foundational process to quantify high and low impact deliverables across partnered websites.</a></li>
+            <li class="nav-item"><a class="nav-link">• Advanced the utilization of a digital web based product that operationalized the workflow for multiple teams.</a></li>
+            <li class="nav-item"><a class="nav-link">• Drafted statement of work, change orders, created production schedules and project estimates.</a></li>
+            <li class="nav-item"><a class="nav-link">• Estimated epics, stories, and created timelines-sprint based iterations based on project requirements.</a></li>
+            <li class="nav-item"><a class="nav-link">• Briefed potential vendors on scope of project, creative guidelines, and project timelines.</a></li>
+            <li class="nav-item"><a class="nav-link">• Liaised with discipline leads and vendors to validate the best schedule to implement to ensure marketing seasonal campaigns launched on the targeted schedule without overloading internal resources.</a></li>
+            <li class="nav-item"><a class="nav-link">• Managed multiple digital marketing web projects by consulting with digital marketing product managers.</a></li>
+            <li class="nav-item"><a class="nav-link">• Removed production blockers by maintaining in-depth involvement on product-project details from brief development to creative-development iterations, to deployments-releases, and post-launch requests.</a></li>
+            <li class="nav-item"><a class="nav-link">• Ensured high-revenue impacted projects are prioritized accordingly and successfully met project objectives in the areas of marketing and e-commerce on an international scale.</a></li>
+            <li class="nav-item"><a class="nav-link">• On-boarded producers on their daily tasks and guided them on mitigating the risks of their assigned projects.</a></li>
+          </ul>
+              <img src="logos/apple.jpg"  width="30%">
+              <img src="logos/fitbit.jpg" width="30%"> 
+              <img src="logos/lgmobile.jpg" width="30%">  
+              <img src="logos/macys.jpg" width="30%">  
+              <img src="logos/tsubo.jpg" width="30%">
+              <img src="logos/riney.jpg" width="30%"> 
+            </div>
+      <div class="container" style="margin-top:50px">
+        <h1 id="three" align="center">RECOMMENDATIONS</h1>
+          <div class="row">
+            <div class="col-md-12 col-center m-auto">
+              <div id="myCarousel" class="carousel slide" data-ride="carousel"><!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol><!-- Wrapper for carousel items -->
+        <div class="carousel-inner">
+          <div class="item carousel-item active">
+            <!--<div class=""><img src="content/recs/cory.png" alt="RECOMMENDATIONS"></div>-->
+            <p class="testimonial">"I had the great pleasure of working with Will at Fitbit. I saw him grow into an amazing Project manger and Product Owner over the time we worked together. I could tell that Will really cared about his work and it showed by the great successes we had in the many marketing campaigns and product launches we worked... <a href=https://www.linkedin.com/in/willtsang/" target="_blank">See more"</a></p>
+            <p class="overview"><b>Cory Fitzpatrick</b>, Front-End Engineer at Fitbit</p>
+          </div>
+          <div class="item carousel-item">
+            <!--<div class=""><img src="content/recs/sesh.png" alt="RECOMMENDATIONS"></div>-->
+            <p class="testimonial">"Will is tremendously hard worker with a positive attitude. At publicis, he had to manage projects that were above his experience level at that time, and Will rose to the occasion to deliver the projects successfully... <a href=https://www.linkedin.com/in/willtsang/" target="_blank">See more"</a></p><br>
+            <p class="overview"><b>Sesh Kannan</b>, Director of Operations at Havas Health & You</p>
+          </div>
+          <div class="item carousel-item">
+            <!--<div class=""><img src="content/recs/Bastien.png" alt="RECOMMENDATIONS"></div>-->
+            <p class="testimonial">I worked with William on various accounts (LG Mobile, PayPal, and X.commerce) when I was at Publicis Modem San Francisco. It was clear from the outset that he had strong understanding of integrated marketing, and a deep knowledge of digital. He was value additive in the creative development process and... <a href=https://www.linkedin.com/in/willtsang/" target="_blank">See more</a></p>
+            <p class="overview"><b>Bastien Frediani</b>, Brand Strategy & Product Marketing Consultant</p>
+          </div>
+        </div><!-- Carousel controls -->
+        <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+          <i class="fa fa-angle-left"></i>
+        </a>
+        <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+          <i class="fa fa-angle-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+  </div><!-- smooth scroll end --> 
+<div class="fixed-bottom container-fluid header">
+<div class="dots"></div>
+<a href="http://www.linkedin.com/in/willtsang" target="_blank"><img src="logos/linkedin.jpg" width="40px" height="40px"></a>
+<a href="https://www.instagram.com/groovybabyyeah07/" target="_blank"><img src="logos/instagram.jpg" width="40px" height="40px"></a>
+<a href="http://www.twitter.com/imwilltsang" target="_blank"><img src="logos/twitter.jpg" width="40px" height="40px"></a>
+</div>
+</body>
+</html>
