@@ -22,22 +22,9 @@
     return false; 
   });
   });
-</script> 
-<script> // https://mdbootstrap.com/snippets/jquery/temp/1478327?action=prism_export // 
-$('#modal1').on('hidden.bs.modal', function (e) {
-  // do something...
-$('#modal1 iframe').attr("src", $("#modal1 iframe").attr("src"));
-});
-$('#modal2').on('hidden.bs.modal', function (e) {
-  // do something...
-$('#modal2 iframe').attr("src", $("#modal2 iframe").attr("src"));
-});
-$('#modal3').on('hidden.bs.modal', function (e) {
-  // do something...
-$('#modal3 iframe').attr("src", $("#modal3 iframe").attr("src"));
-});
 </script>
-<script data-ad-client="ca-pub-8060821435699341" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> 
+  <link rel="stylesheet" href="css/modal-video.min.css">
+
 <style>
 .carousel {
   margin: 50px auto;
@@ -58,13 +45,7 @@ $('#modal3 iframe').attr("src", $("#modal3 iframe").attr("src"));
   border: 1px solid #ddd;
   border-radius: 50%;
 }
-.carousel .img-box img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  border-radius: 50%;
-}
-.carousel .testimonial {
+carousel .testimonial {
   padding: 30px 0 10px;
 }
 .carousel .overview { 
@@ -75,33 +56,6 @@ $('#modal3 iframe').attr("src", $("#modal3 iframe").attr("src"));
   text-transform: uppercase;
   color: #7AA641;
 }
-.carousel .carousel-control {
-  width: 40px;
-  height: 40px;
-  margin-top: -20px;
-  top: 50%;
-}
-.carousel-control i {
-    position: absolute;
-    display: inline-block;
-}
-.carousel .carousel-indicators {
-  bottom: 0px;
-}
-.carousel-indicators li, .carousel-indicators li.active {
-  width: 25px;
-  height: 1px;
-  margin: 10px 10px;
-  border-radius: 100%;
-}
-.carousel-indicators li { 
-  background: #999;
-  border-color: transparent;
-  box-shadow: inset 0 0px 0px rgba(0,0,0,0.2);
-}
-.carousel-indicators li.active {  
-  background: black;   
-  box-shadow: inset 0 1px 1px rgba(0,0,0,0.2);
 </style>
 <style>
 /*dot = class & # = id */
@@ -113,8 +67,8 @@ $('#modal3 iframe').attr("src", $("#modal3 iframe").attr("src"));
   padding:0;
 }
 .header {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 36px; 
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 32px; 
   font-weight: bold; 
   text-align: center; 
   background-color: white; 
@@ -200,23 +154,16 @@ h1 {
 </div>
 <!-- smooth scroll content start --> 
 <div class="jumbotron-fluid align-middle">
-  <h1>PROJECT MANAGER / <br/> PRODUCER  <br/> (OPERATIONS) </h1>
+  <h1> PROJECT MANAGER / <br/> PRODUCER <br/> (OPERATIONS)</h1>
     <div class="container" style="margin-top:30px">
       <div class="row">
         <div class="col-sm-12">
-          <p align="left">With a healthy obsession for learning new things, getting things done, and always looking for process improvement, I've worked with cross-functional teams in a project management function for a digital creative agency, e-commerce retailer, and an advertising technology start-up. Adaptable, assertive, and armed with a calming presence and skilled in various digital tools ranging from MS Project 
-		  
-		  and Jira to HTML/CSS and Final Cut Pro, I can help solve problems and can drive your projects to quality completion.</p><br/> 
+          <p align="left">With a healthy obsession for learning new things, getting things done, and always looking for process improvement, I've worked with cross-functional teams in a project management function for a digital creative agency, e-commerce retailer, and an advertising technology start-up. Adaptable, assertive, and armed with a calming presence and skilled in various digital tools ranging from MS Project and Jira to HTML/CSS and Final Cut Pro, I can help solve problems and can drive your projects to quality completion.</p><br/> 
         </div>
       </div>
     </div>
     <div class="container" style="margin-top:50px">
       <h1 id="one" align="left">CONTENT</h1>
-          <img src="content/fitbit_hp2.png" width="100%" alt="static">
-      	  <img src="content/fitbit_blog2.png" width="100%" alt="static"> 	          
-      	  <img src="content/fitbit_store3.png" width="100%" alt="static">
-      	  <img src="content/lg_thrill_youtube.jpg" width="49%" alt="static"> 	          
-      	  <img src="content/sofafinder.jpg" width="49%" alt="static">
         <div class="row">
           <div class="col-sm-12"> <!--Modal: LAST-->
 		        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -251,10 +198,27 @@ h1 {
                   </div>
     	         </div>
 		          </div>
-	           </div><!--Modal: Name-->
-    	         <a><img class="img-fluid z-depth-1" src="content/last_2.jpg" width="100%" alt="video" data-toggle="modal" data-target="#modal1"></a>  
-    	         <a><img class="img-fluid z-depth-1" src="content/rubber02.jpg" width="100%" alt="video" data-toggle="modal" data-target="#modal2"></a>  
-    	         <a><img class="img-fluid z-depth-1" src="content/holystitch.jpg" width="100%" alt="video" data-toggle="modal" data-target="#modal3"></a>  
+	           </div><!--Modal: CREATIVE-REPORT-->
+            <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg" role="document"> <!--Content-->
+                <div class="modal-content"> <!--Body-->
+                  <div class="modal-body mb-0 p-0">
+                    <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/22eJekah7P0" allowfullscreen></iframe>
+                    </div>
+                  </div>
+               </div>
+              </div>
+             </div><!--Modal: Name-->
+                <a href="https://www.fitbit.com/us/products" target="_blank"><img class="img-fluid" src="content/fitbit_hp_01.png" width="70%" height="#"></a>  
+                <a href="https://www.fitbit.com/us/products"><img class="img-fluid" src="content/fitbit_store_01.png" width="70%"</a>  
+                <a href="https://www.fitbit.com/us/products"><img class="img-fluid z-depth-1" src="content/fitbit_blog_navi.png" width="70%"></a>  
+                <a href="https://www.att.com/buy/phones/browse/lg/"><img class="img-fluid" src="content/lg_thrill_youtube.jpg" width="50%" height="200px"></a> 
+                <a href="https://www.att.com/buy/phones/browse/lg/"><img class="img-fluid z-depth-1" src="content/lg_thrill_mobile.jpg" width="19%"></a>  
+                <a><img class="img-fluid z-depth-1" src="content/last_2.jpg" width="70%" alt="video" data-toggle="modal" data-target="#modal1"></a>  
+                <a><img class="img-fluid z-depth-1" src="content/rubber02.jpg" width="70%" alt="video" data-toggle="modal" data-target="#modal2"></a>  
+                <a><img class="img-fluid z-depth-1" src="content/holystitch.jpg" width="70%" alt="video" data-toggle="modal" data-target="#modal3"></a>  
+                <a><img class="img-fluid z-depth-1" src="content/tcr.jpg" width="70%" alt="video" data-toggle="modal" data-target="#modal4"></a><br />
           </div>
         </div>
       </div>
@@ -280,43 +244,33 @@ h1 {
           </ul>
               <img src="logos/apple.jpg"  width="30%">
               <img src="logos/fitbit.jpg" width="30%"> 
-              <img src="logos/lgmobile.jpg" width="30%">  
-              <img src="logos/macys.jpg" width="30%">  
+              <img src="logos/pubmo.jpg" width="30%">  
               <img src="logos/tsubo.jpg" width="30%">
-              <img src="logos/riney.jpg" width="30%"> 
+              <img src="logos/macys.jpg" width="30%">
+              <img src="logos/riney.jpg" width="30%">
             </div>
       <div class="container" style="margin-top:50px">
         <h1 id="three" align="center">RECOMMENDATIONS</h1>
           <div class="row">
             <div class="col-md-12 col-center m-auto">
               <div id="myCarousel" class="carousel slide" data-ride="carousel"><!-- Carousel indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol><!-- Wrapper for carousel items -->
         <div class="carousel-inner">
-          <div class="item carousel-item active">
+          <div class="#">
             <!--<div class=""><img src="content/recs/cory.png" alt="RECOMMENDATIONS"></div>-->
-            <p class="testimonial">"I had the great pleasure of working with Will at Fitbit. I saw him grow into an amazing Project manger and Product Owner over the time we worked together. I could tell that Will really cared about his work and it showed by the great successes we had in the many marketing campaigns and product launches we worked... <a href=https://www.linkedin.com/in/willtsang/" target="_blank">See more"</a></p>
+            <p class="#">"I had the great pleasure of working with Will at Fitbit. I saw him grow into an amazing Project Manger and Product Owner over the time we worked together. I could tell that Will really cared about his work and it showed by the great successes we had in the many marketing campaigns and product launches we worked... <a href="https://www.linkedin.com/in/willtsang/" target="_blank">See more</a></p>
             <p class="overview"><b>Cory Fitzpatrick</b>, Front-End Engineer at Fitbit</p>
           </div>
-          <div class="item carousel-item">
+          <div class="#">
             <!--<div class=""><img src="content/recs/sesh.png" alt="RECOMMENDATIONS"></div>-->
-            <p class="testimonial">"Will is tremendously hard worker with a positive attitude. At publicis, he had to manage projects that were above his experience level at that time, and Will rose to the occasion to deliver the projects successfully... <a href=https://www.linkedin.com/in/willtsang/" target="_blank">See more"</a></p><br>
+            <p class="testimonial">"Will is tremendously hard worker with a positive attitude. At Publicis, he had to manage projects that were above his experience level at that time, and Will rose to the occasion to deliver the projects successfully... <a href="https://www.linkedin.com/in/willtsang/" target="_blank"> See more</a></p>
             <p class="overview"><b>Sesh Kannan</b>, Director of Operations at Havas Health & You</p>
           </div>
-          <div class="item carousel-item">
+          <div class="#">
             <!--<div class=""><img src="content/recs/Bastien.png" alt="RECOMMENDATIONS"></div>-->
-            <p class="testimonial">I worked with William on various accounts (LG Mobile, PayPal, and X.commerce) when I was at Publicis Modem San Francisco. It was clear from the outset that he had strong understanding of integrated marketing, and a deep knowledge of digital. He was value additive in the creative development process and... <a href=https://www.linkedin.com/in/willtsang/" target="_blank">See more</a></p>
+            <p class="testimonial">"I worked with William on various accounts (LG Mobile, PayPal, and X.commerce) when I was at Publicis Modem San Francisco. It was clear from the outset that he had strong understanding of integrated marketing, and a deep knowledge of digital. He was value additive in the creative development process and...<a href="https://www.linkedin.com/in/willtsang/" target="_blank"> See more</a></p>
             <p class="overview"><b>Bastien Frediani</b>, Brand Strategy & Product Marketing Consultant</p>
           </div>
-        </div><!-- Carousel controls -->
-        <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
-          <i class="fa fa-angle-left"></i>
-        </a>
-        <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
-          <i class="fa fa-angle-right"></i>
+        </div>
         </a>
       </div>
     </div>
