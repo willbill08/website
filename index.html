@@ -23,7 +23,15 @@
   });
   });
 </script>
-  <link rel="stylesheet" href="css/modal-video.min.css">
+<script>
+$('#myModal').on('hidden.bs.modal', function (e) {
+  var $iframes = $(e.target).find('iframe');
+  $iframes.each(function(index, iframe){
+  $(iframe).attr("src", $(iframe).attr('src'));
+  });
+})
+</script>
+<link rel="stylesheet" href="css/modal-video.min.css">
 
 <style>
 .carousel {
@@ -212,7 +220,7 @@ h1 {
              </div><!--Modal: Name-->
                 <a href="https://www.fitbit.com/us/products" target="_blank"><img class="img-fluid" src="content/fitbit_hp_01.png" width="70%" height="#"></a>  
                 <a href="https://www.fitbit.com/us/products"><img class="img-fluid" src="content/fitbit_store_01.png" width="70%"</a>  
-                <a href="https://www.fitbit.com/us/products"><img class="img-fluid z-depth-1" src="content/fitbit_blog_navi.png" width="70%"></a>  
+                <a href="https://blog.fitbit.com"><img class="img-fluid z-depth-1" src="content/fitbit_blog_navi.png" width="70%"></a>  
                 <a href="https://www.att.com/buy/phones/browse/lg/"><img class="img-fluid" src="content/lg_thrill_youtube.jpg" width="50%" height="200px"></a> 
                 <a href="https://www.att.com/buy/phones/browse/lg/"><img class="img-fluid z-depth-1" src="content/lg_thrill_mobile.jpg" width="19%"></a>  
                 <a><img class="img-fluid z-depth-1" src="content/last_2.jpg" width="70%" alt="video" data-toggle="modal" data-target="#modal1"></a>  
@@ -247,8 +255,17 @@ h1 {
               <img src="logos/pubmo.jpg" width="30%">  
               <img src="logos/tsubo.jpg" width="30%">
               <img src="logos/macys.jpg" width="30%">
-              <a href="https://www.youtube.com/watch?v=yM7fLJ18b3Y" target="_blank"><img src="logos/riney.jpg" width="30%">
-		      </div></a>
+              <img src="logos/riney.jpg" width="30%">
+            </div>
+      <div class="container" style="margin-top:50px">
+        <h1 id="three" align="left">METHODS</h1>
+          <div class="row">
+            <div class="col-md-12 col-center m-auto">
+     			<img src="methods/kanban_roadmap_NG.png" width="70%">
+		     	<img src="methods/kanban_board_NXG.png" width="70%">   			
+   			</div>
+        </div>
+      </div>
       <div class="container" style="margin-top:50px">
         <h1 id="three" align="center">RECOMMENDATIONS</h1>
           <div class="row">
